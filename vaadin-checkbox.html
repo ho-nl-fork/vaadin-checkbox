@@ -76,7 +76,7 @@ This program is available under Apache License Version 2.0, available at https:/
       throw new Error(`Unexpected Polymer version ${Polymer.version} is used, expected v2.0.0 or later.`);
     }
 
-    (function() {
+    {
       /**
        * `<vaadin-checkbox>` is a Polymer 2 element for customized checkboxes.
        *
@@ -240,6 +240,6 @@ This program is available under Apache License Version 2.0, available at https:/
        */
       window.Vaadin = window.Vaadin || {};
       Vaadin.CheckboxElement = CheckboxElement;
-    })();
+    }
   </script>
 </dom-module>

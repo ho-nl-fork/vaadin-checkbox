@@ -14,15 +14,15 @@ gemini.suite('vaadin-checkbox', function(rootSuite) {
     .before(wait)
     .after(goToAboutBlank);
 
-  gemini.suite('default-tests', function(suite) {
+  gemini.suite('default-tests', suite => {
     suite
       .setUrl('/default.html')
       .setCaptureElements('#default-tests')
       .capture('default')
-      .capture('focus-ring', function(actions) {
+      .capture('focus-ring', actions => {
         actions.sendKeys(gemini.TAB);
       })
-      .capture('checked', function(actions) {
+      .capture('checked', actions => {
         actions.sendKeys(gemini.SPACE);
       });
   });

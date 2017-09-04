@@ -49,7 +49,7 @@
         expect(vaadinCheckbox.value).to.be.eql('on');
       });
 
-      it('fires click event', function(done) {
+      it('fires click event', done => {
         vaadinCheckbox.addEventListener('click', () => {
           done();
         });
